@@ -23,7 +23,7 @@ header {
 }
 
 .nav_list {
-    width: 300px;
+    width: 230px;
     display: flex;
     justify-content: space-evenly;
 }
