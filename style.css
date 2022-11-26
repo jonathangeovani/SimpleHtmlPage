@@ -1,5 +1,3 @@
-/*https://cdn.pixabay.com/photo/2020/01/26/20/14/computer-4795762_960_720.jpg*/
-
 *,
 *::before,
 *::after {
@@ -7,4 +5,78 @@
     padding: 0;
     text-decoration: none;
     box-sizing: border-box;
+}
+
+header {
+    height: 10%;
+    padding: 0px 20px;
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: #f2f7ff;
+}
+
+.logo {
+    width: 150px;
+}
+
+.nav_list {
+    width: 300px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.list_item {
+    list-style: none;
+}
+
+main {
+    height: 90vh;
+    width: 100vw;
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-image: url("https://cdn.pixabay.com/photo/2020/01/26/20/14/computer-4795762_960_720.jpg");
+    background-size: cover;
+
+    color: #fff;
+    text-shadow: 0 3px 3px black;
+}
+
+.block {
+    height: 90vh;
+}
+
+.image {
+    max-height: 200px;
+    border-radius: 8px 40px;
+}
+
+.purpose {
+    background-color: #bdc8db;
+}
+
+.about {
+    color: #fff;
+    background-color: #566c9c;
+}
+
+.github {
+    background-color: #bdc8db;
+}
+
+.button {
+    padding: 10px 30px;
+    border-radius: 5px;
+    background-color: #1960fa;
+    color: #fff;
+}
+
+footer {
+    height: 7vh;
 }
