@@ -49,6 +49,7 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
 
     background-image: url("https://cdn.pixabay.com/photo/2020/01/26/20/14/computer-4795762_960_720.jpg");
     background-size: cover;
@@ -68,6 +69,7 @@ main {
     display: flex;
     flex-direction: column;
     max-width: 600px;
+    gap: 10px;
 }
 
 .image {
@@ -89,6 +91,7 @@ main {
 }
 
 .button {
+    margin: auto;
     width: 150px;
     padding: 10px 30px;
     border-radius: 5px;
@@ -103,4 +106,34 @@ footer {
     height: 7vh;
     background-color: #566c9c;
     color: #fff;
+}
+
+@media (min-width: 800px) and (max-width: 1080px) {
+    .text_block {
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 800px) {
+    .block {
+        flex-direction: column;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    .text_block {
+        max-width: 80vw;
+    }
+
+    .image {
+        max-width: 80vw;
+        border-radius: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 10px 0;
+        flex-direction: column;
+    }
 }
