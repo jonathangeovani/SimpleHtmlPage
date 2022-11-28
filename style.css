@@ -23,9 +23,12 @@ header {
 }
 
 .nav_list {
-    width: 230px;
+    padding: 0 10px;
     display: flex;
     justify-content: space-evenly;
+    gap: 10px;
+    flex-wrap: wrap;
+
     font-weight: 600;
 }
 
@@ -59,7 +62,7 @@ main {
 }
 
 .block {
-    height: 90vh;
+    min-height: 480px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -92,7 +95,6 @@ main {
 
 .button {
     margin: auto;
-    width: 150px;
     padding: 10px 30px;
     border-radius: 5px;
     background-color: #1960fa;
@@ -103,7 +105,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 7vh;
+    height: 30px;
     background-color: #566c9c;
     color: #fff;
 }
@@ -135,5 +137,11 @@ footer {
     header {
         padding: 10px 0;
         flex-direction: column;
+    }
+}
+
+@media (max-height: 480px) {
+    .block {
+        height: 480px
     }
 }
