@@ -26,15 +26,24 @@ header {
     width: 230px;
     display: flex;
     justify-content: space-evenly;
+    font-weight: 600;
 }
 
 .list_item {
     list-style: none;
 }
 
+.list_item > a,
+.list_item > a:visited {
+    color: #000;
+}
+
+.list_item > a:hover {
+    color: #566c9c;
+}
+
 main {
     height: 90vh;
-    width: 100vw;
     display: flex;
 
     flex-direction: column;
@@ -50,6 +59,15 @@ main {
 
 .block {
     height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.text_block {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
 }
 
 .image {
@@ -71,6 +89,7 @@ main {
 }
 
 .button {
+    width: 150px;
     padding: 10px 30px;
     border-radius: 5px;
     background-color: #1960fa;
@@ -78,5 +97,10 @@ main {
 }
 
 footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 7vh;
+    background-color: #566c9c;
+    color: #fff;
 }
